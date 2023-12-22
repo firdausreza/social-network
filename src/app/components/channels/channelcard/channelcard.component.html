@@ -1,0 +1,9 @@
+<div class="channel-content card text-bg-dark">
+  <img [defaultImage]="'../../../../assets/card-placeholder.jpg'" [lazyLoad]="channel.img" class="card-img" alt="placeholder">
+  <div class="card-img-overlay bg-dark bg-opacity-50 bg-gradient d-flex align-items-end">
+    <h5 class="card-title fs-6 mb-0">{{ channel.name ?? '' }}</h5>
+  </div>
+  <div class="channel-content__add">
+    <fa-icon [icon]="plusIcon" size="sm" class="channel-content__add-icon"></fa-icon>
+  </div>
+</div>

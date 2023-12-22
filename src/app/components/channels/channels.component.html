@@ -1,0 +1,15 @@
+<aside class="d-flex flex-column mt-3">
+  <section class="channel-header d-flex justify-content-between align-items-end pb-2 border-2 border-bottom">
+    <h2 class="fs-4 mb-0">
+      Channels
+    </h2>
+    <a href="#" class="fs-6 text-decoration-none">Browse all channels</a>
+  </section>
+  <section class="aside-content">
+    <div class="row row-cols-2 g-2 mt-2">
+      <div *ngFor="let channel of channels" class="col">
+        <app-channelcard [channel]="channel"></app-channelcard>
+      </div>
+    </div>
+  </section>
+</aside>

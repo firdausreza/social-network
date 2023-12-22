@@ -1,0 +1,20 @@
+<aside class="d-flex flex-column mt-3">
+  <section class="aside-header d-flex justify-content-between align-items-end pb-2 border-2 border-bottom">
+    <h2 class="fs-4 mb-0">
+      Activity
+    </h2>
+    <div class="activity-links">
+      <a href="#" class="fs-6 text-decoration-none" (click)="generateNewComments()">View timeline</a>
+      /
+      <a href="#" class="fs-6 text-decoration-none" (click)="generateNewComments()">Filter activities</a>
+    </div>
+  </section>
+  <section class="aside-content d-flex flex-column mt-2 gap-2">
+    <app-activitycard 
+      *ngFor="let comment of comments; index as i" 
+      [comment]="comment" 
+      [index]="i" 
+      [isLoading]="isLoading" (delete)="deleteComment($event)">
+    </app-activitycard>
+  </section>
+</aside>

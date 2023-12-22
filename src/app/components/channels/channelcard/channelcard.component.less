@@ -1,0 +1,50 @@
+@import url("../../../app.less");
+
+.channel-content {
+  position: relative;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid @secondary-color;
+
+    .channel-content__add {
+      &:hover {
+        cursor: pointer;
+      }
+      display: flex;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-left-width: 0px;
+      border-bottom-width: 0px;
+  
+      .channel-content__add-icon {
+        position: absolute;
+        top: -3px;
+        right: 5px;
+        z-index: 999;
+        color: @primary-color;
+      }
+    }
+  
+    .channel-content__add:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 30px 30px 0;
+      border-color: transparent @secondary-color transparent transparent;
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+
+  .channel-content__add {
+    display: none;
+  }
+}

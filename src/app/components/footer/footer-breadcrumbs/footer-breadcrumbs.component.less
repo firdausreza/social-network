@@ -1,0 +1,29 @@
+@import url('../../../app.less');
+
+.footer-breadcrumbs {
+  color: @secondary-color;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.footer-breadcrumb__item {
+  margin: 0 0.5rem;
+  
+  /* Used to position the separator between items */
+  position: relative;
+  p {
+    color: @secondary-color;
+  }
+}
+
+.footer-breadcrumb__item:not(:last-child)::after {
+  /* Absolute position */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(10px, 0px);
+
+  content: '/';
+}

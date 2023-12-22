@@ -1,0 +1,50 @@
+<header class="app-header">
+  <nav class="navbar navbar-expand-lg text-white">
+    <div class="container-lg">
+      <a class="navbar-brand fs-3" href="#">SocialNetwork</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-3 mt-lg-0 d-lg-flex justify-content-lg-end align-items-lg-center" id="navbarTogglerDemo01">
+        <div *ngIf="windowWidth <= 992" class="user-btn d-flex align-items-center mb-3 mt-lg-0">
+          <fa-icon [icon]="userIcon" size="2x" class="user-icon me-2"></fa-icon>
+          <div class="user-section">
+            <p class="fs-6 lh-1 mb-0" style="color: burlywood;">
+              Waseem
+              <br>
+              <span style="font-size: 12px;">Arshad</span>
+            </p>
+            <span class="notif-icon rounded-circle">
+              3
+            </span>
+          </div>
+        </div>
+        <form class="search-form me-md-3" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <fa-icon [icon]="searchIcon" class="search-icon"></fa-icon>
+        </form>
+        <div class="d-grid d-lg-inline">
+          <button class="btn upload-button mt-2 mt-lg-0 me-lg-3">
+            <span class="me-2">
+              <fa-icon [icon]="arrowUpIcon" class="arrow-icon"></fa-icon>
+            </span>
+            Upload
+          </button>
+        </div>
+        <div *ngIf="windowWidth > 992" class="user-btn d-flex align-items-center mt-3 mt-lg-0">
+          <fa-icon [icon]="userIcon" size="2x" class="user-icon me-2"></fa-icon>
+          <div class="user-section">
+            <p class="fs-6 lh-1 mb-0" style="color: burlywood;">
+              Waseem
+              <br>
+              <span style="font-size: 12px;">Arshad</span>
+            </p>
+            <span class="notif-icon rounded-circle">
+              3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

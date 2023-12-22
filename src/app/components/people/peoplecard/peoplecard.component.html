@@ -1,0 +1,11 @@
+<div class="card text-bg-dark">
+  <img [src]="user.image" class="card-img" alt="card placeholder">
+  <div class="card-img-overlay bg-dark bg-opacity-50 bg-gradient d-flex align-items-end">
+    <div class="w-100 d-flex justify-content-between align-items-end">
+      <div>
+        <h5 class="card-title fs-6">{{ user.firstName + user.lastName }}</h5>
+        <p class="card-text lh-sm" style="font-size: 14px;">{{ user.company.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>
